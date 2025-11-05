@@ -1,0 +1,24 @@
+# BiometricFrontend
+package employeeAttendenceSystem;
+
+import javafx.application.Application;
+import javafx.scene.Scene;
+import javafx.scene.control.*;
+import javafx.scene.layout.VBox;
+import javafx.stage.Stage;
+
+public class GUIController extends Application {
+
+    @Override
+    public void start(Stage stage) {
+
+        TextField idField = new TextField();
+        idField.setPromptText("Employee ID");
+
+        TextField nameField = new TextField();
+        nameField.setPromptText("Employee Name");
+
+        TextField fingerprintField = new TextField();
+        fingerprintField.setPromptText("Fingerprint ID");
+
+        Button registerBtn = new Button("Register &
